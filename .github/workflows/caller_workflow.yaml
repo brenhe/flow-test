@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Workflow Call
-        uses: github.com/brenhe/workflow_call.yaml@main
+        uses: github.com/brenhe/flow_test/workflow_call.yaml@main
         with:
           build_type: ${{ inputs.build_type }}     
         
