@@ -17,6 +17,6 @@ jobs:
             shell: bash
 
           - name: Run additional tests
-            uses: github.com/brenhe/flow_test/new_workflow_call.yaml@main
+            uses: brenhe/flow_test/.github/workflows/new_workflow_call.yaml@main
             with:
                 build_type: ${{ inputs.build_type }}   
