@@ -14,10 +14,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Run tests
-        run: |
-            echo "Running tests for build type: ${{ inputs.build_type }}"
-        shell: bash     
+      - name: Workflow Call
+        uses: github.com/brenhe/workflow_call.yaml@main
+        with:
+          build_type: ${{ inputs.build_type }}     
+        
