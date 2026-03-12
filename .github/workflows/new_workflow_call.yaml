@@ -1,0 +1,17 @@
+name: New Caller Workflow      
+
+on:
+  workflow_call:
+    inputs:
+      build_type:
+        type: string
+        description: 'Type of build to run tests for'
+        required: true
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Run input value test
+            run: |
+                echo "Running tests for build type: ${{ inputs.build_type }}"
+            shell: bash
