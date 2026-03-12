@@ -9,7 +9,10 @@ on:
         type: choice
         options:
             - producaoCloudPrd
-            - pilotoCloudPrd                
+            - pilotoCloudPrd
+  push:
+    branches:
+      - main                          
 jobs:
   test:
     uses: brenhe/flow_test/.github/workflows/workflow_call.yaml@main
