@@ -13,3 +13,10 @@ jobs:
     uses: brenhe/flow-test/.github/workflows/new_workflow_call.yaml@main
     with:
       build_type: ${{ inputs.build_type }}
+  test3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run input value test
+        run: |
+            echo "Running tests for build type: ${{ inputs.build_type }}"
+        shell: bash      

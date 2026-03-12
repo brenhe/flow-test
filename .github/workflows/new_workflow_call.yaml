@@ -15,3 +15,10 @@ jobs:
             run: |
                 echo "Running tests for build type: ${{ inputs.build_type }}"
             shell: bash
+    test4:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Run input value test
+            run: |
+                echo "Running tests for build type: ${{ inputs.build_type }}"
+            shell: bash            
