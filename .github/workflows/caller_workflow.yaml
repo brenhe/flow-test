@@ -9,10 +9,7 @@ on:
         type: choice
         options:
             - producaoCloudPrd
-            - pilotoCloudPrd        
-  push:
-    branches:
-      - main          
+            - pilotoCloudPrd                
 jobs:
   test:
     runs-on: ubuntu-latest
