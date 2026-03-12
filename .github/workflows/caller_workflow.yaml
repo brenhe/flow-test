@@ -4,18 +4,19 @@ on:
   workflow_dispatch:
     inputs:
       build_type:
-        description: 'Ambiente de build'
+        description: "Ambiente de build"
         required: true
         type: choice
         options:
-            - producaoCloudPrd
-            - pilotoCloudPrd
+          - producaoCloudPrd
+          - pilotoCloudPrd
+
   push:
     branches:
-      - main                          
+      - main
+
 jobs:
   test:
-    uses: brenhe/flow_test/.github/workflows/workflow_call.yaml@main
+    uses: brenhe/flow-test/.github/workflows/workflow_call.yaml@main
     with:
-        build_type: ${{ inputs.build_type }}     
-        
+      build_type: ${{ inputs.build_type }}

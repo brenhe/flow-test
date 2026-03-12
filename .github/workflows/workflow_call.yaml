@@ -1,14 +1,15 @@
-name: Caller Workflow      
+name: Caller Workflow
 
 on:
   workflow_call:
     inputs:
       build_type:
-        type: string
-        description: 'Type of build to run tests for'
+        description: "Type of build to run tests for"
         required: true
+        type: string
+
 jobs:
   test:
-    uses: brenhe/flow_test/.github/workflows/new_workflow_call.yaml@main
+    uses: brenhe/flow-test/.github/workflows/new_workflow_call.yaml@main
     with:
-        build_type: ${{ inputs.build_type }}   
+      build_type: ${{ inputs.build_type }}
