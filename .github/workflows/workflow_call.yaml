@@ -1,4 +1,4 @@
-name: Caller Workflow
+name: Segundo_Workflow_Call
 
 on:
   workflow_call:

@@ -1,4 +1,4 @@
-name: New Caller Workflow      
+name: Terceiro_Workflow_Call      
 
 on:
   workflow_call:
