@@ -8,15 +8,7 @@ on:
         description: 'Type of build to run tests for'
         required: true
 jobs:
-    test:
-        runs-on: ubuntu-latest
-        steps:
-          - name: Run input value test
-            run: |
-                echo "Running tests for build type: ${{ inputs.build_type }}"
-            shell: bash
-
-          - name: Run additional tests
-            uses: brenhe/flow_test/.github/workflows/new_workflow_call.yaml@main
-            with:
-                build_type: ${{ inputs.build_type }}   
+  test:
+    uses: brenhe/flow_test/.github/workflows/new_workflow_call.yaml@main
+    with:
+        build_type: ${{ inputs.build_type }}   
