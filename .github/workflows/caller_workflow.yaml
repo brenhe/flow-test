@@ -12,7 +12,7 @@ on:
           - pilotoCloudPrd
 
 jobs:
-  test:
+  Chamando_Workflow_Call:
     uses: brenhe/flow-test/.github/workflows/workflow_call.yaml@main
     with:
       build_type: ${{ inputs.build_type }}

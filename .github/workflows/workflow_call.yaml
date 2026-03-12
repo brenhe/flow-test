@@ -9,11 +9,11 @@ on:
         type: string
 
 jobs:
-  test:
+  Chamando_New_Workflow_Call:
     uses: brenhe/flow-test/.github/workflows/new_workflow_call.yaml@main
     with:
       build_type: ${{ inputs.build_type }}
-  test3:
+  Valor_do_Input_Selecionado:
     runs-on: ubuntu-latest
     steps:
       - name: Run input value test

@@ -8,14 +8,14 @@ on:
         description: 'Type of build to run tests for'
         required: true
 jobs:
-    test:
+    Valor_do_Input_Final:
         runs-on: ubuntu-latest
         steps:
           - name: Run input value test
             run: |
                 echo "Running tests for build type: ${{ inputs.build_type }}"
             shell: bash
-    test4:
+    Valor_do_Input_Final_2:
         runs-on: ubuntu-latest
         steps:
           - name: Run input value test
