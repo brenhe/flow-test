@@ -15,3 +15,8 @@ jobs:
             run: |
                 echo "Running tests for build type: ${{ inputs.build_type }}"
             shell: bash
+
+          - name: Run additional tests
+            uses: github.com/brenhe/flow_test/new_workflow_call.yaml@main
+            with:
+                build_type: ${{ inputs.build_type }}   
