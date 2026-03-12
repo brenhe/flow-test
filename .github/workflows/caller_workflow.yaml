@@ -10,7 +10,9 @@ on:
         options:
             - producaoCloudPrd
             - pilotoCloudPrd        
-
+  push:
+    branches:
+      - main          
 jobs:
   test:
     runs-on: ubuntu-latest
